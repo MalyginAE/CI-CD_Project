@@ -5,15 +5,14 @@ import com.pengrad.telegrambot.request.SendMessage;
 
 public class App {
     static String token = System.getProperty("token");
+    static TelegramBot bot = new TelegramBot(token);
+    static String chatId = System.getenv("chatId");
 
     static {
         if (token == null) {
             token = System.getenv("token");
         }
     }
-
-    static TelegramBot bot = new TelegramBot(token);
-    static String chatId = System.getenv("chatId");
 
     public static void main(String[] args) {
 
