@@ -20,5 +20,6 @@ public class App {
 
         SendMessage sendMessage = new SendMessage(chatId, "привет от CI/CD");
         bot.execute(sendMessage);
+        System.out.println("Сообщение отправлено");
     }
 }
