@@ -6,7 +6,6 @@ import com.pengrad.telegrambot.request.SendMessage;
 public class App {
     static String token = System.getProperty("token");
 
-
     static {
         if (token == null) {
             token = System.getenv("token");
