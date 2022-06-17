@@ -11,14 +11,14 @@ public class App {
             token = System.getenv("token");
         }
     }
-
+    //для к
     static TelegramBot bot = new TelegramBot(token);
     static String chatId = System.getenv("chatId");
 
     public static void main(String[] args) {
 
 
-        SendMessage sendMessage = new SendMessage(chatId, "привет от CI/CD");
+        SendMessage sendMessage = new SendMessage(chatId, "привет Hello");
         bot.execute(sendMessage);
         System.out.println("Сообщение отправлено");
     }
